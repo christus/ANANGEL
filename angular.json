@@ -32,6 +32,7 @@
               }
             ],
             "styles": [
+              "src/assets/fonts/font-file.css",
               {
                 "input": "src/theme/variables.scss"
               },

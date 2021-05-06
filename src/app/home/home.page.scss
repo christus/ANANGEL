@@ -1,11 +1,13 @@
+a {text-decoration: none;}
+
 #container {
   text-align: center;
-
   position: absolute;
   left: 0;
   right: 0;
   margin: 20px auto 0;
   max-width: 300px;
+
 }
 
 #container ion-button {
@@ -43,34 +45,43 @@
   text-decoration: none;
 }
 
-ion-header ion-toolbar {
-  height: 213px;
-  background-image: url('/assets/Background_image.jpg');
+.bg_img{
+  background-image: url('/assets/Background_image.png');
   background-size: 120%;
   background-position: top center;
-  --opacity: 0.4;
-  position: relative;
+  --opacity: 0.1;
+  position: absolute;
+  width: 100%;
+  height: 190px;
 }
 
-ion-header ion-toolbar ion-thumbnail {
+ion-header{
+  z-index: 0 !important;
+  font-family: 'NunitoSans', 'arial', sans-serif;
+
+}
+
+
+ion-header ion-toolbar ion-thumbnail  {
   height: auto;
-  margin: 30px auto 0;
+  margin: 30px 15px 0px 25px;
   display: block;
-  width: 73px;
+  width: 48px;
 }
 
 ion-header p {
   text-align: center;
 }
 
-ion-header ion-toolbar:after {
+ion-header:before {
   position: absolute;
   content: "";
-  height: 3px;
+  height: 2px;
   background-image: url(/assets/border.png);
   width: 100%;
   left: 0;
-  bottom: 0px;
+  top: 0px;
+  z-index: 1000;
   background-size: 100% 100%;
 }
 
@@ -88,6 +99,7 @@ ion-footer.md ul {
 ion-footer ul li {
   display: inline-block;
   padding: 0 5px;
+  margin-left: 32px;
 }
 
 ion-footer ion-toolbar:after {
@@ -97,16 +109,170 @@ ion-footer ion-toolbar:after {
   left: 0;
   top: 0;
   height: 3px;
-  background-image: url(/assets/border.png);
+  //background-image: url(/assets/border.png);
   background-size: 100% 100%;
 }
 
 ion-footer ion-toolbar {
   padding-top: 3px;
   position: relative;
-  height: 38px;
+  height: 44px;
 }
 
 ion-content {
-  --background: #14497b !important;
+  font-family: 'NunitoSans', 'arial', sans-serif;
+  --background: #FFF !important;
+}
+ .volunteer_banner{
+  display: block;
+    width: 93vw;
+    height: 230px;
+    background-image: url(/assets/Volunteers_banner.png);
+    background-position: top center;
+    --opacity: 0.4;
+    position: relative;
+    margin-top: 18px;
+    background-repeat: no-repeat;
+    background-size: 93vw 230px;
+    border-radius: 13px;
+    box-shadow: 0 0 10px grey;
+}
+
+.logo{
+  width: 60px;
+    height: 77px;
+    background-image: url(/assets/logo.png);
+    --opacity: 0.4;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 69px 72px;
+    z-index: 10000;
+    margin-top: 22px;
+    margin-left: 22px;
+}
+
+.message_icon{
+  width: 48px;
+  height: 48px;
+  background-image: url(/assets/chat.png);
+  /* --opacity: 0.4; */
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 48px 48px;
+  z-index: 10000;
+  margin-top: -25px;
+  margin-right: 25px;
+  right: 0;
+  box-shadow: 0px 4px 9px #ccc;
+  border-radius: 190px;
+}
+
+.do_good, .one_action {
+  position: relative;
+    bottom: -152px;
+    margin-left: 22px;
+    font-size: 24px;
+    font-family: "shadowsLight", "arial", sans-serif;
+    text-align: left;
+}
+.do_good {
+  color: #FFF;
+}
+.one_action {
+  margin-top: -8px;
+  color: #F6e25d;
+}
+.menu_txt1{
+  color: #252B3B;
+  float: left;
+  margin-top: 25px;
+  margin-left: 21px;
+  font-weight: bold;
+  width: 100%;
+
+}
+
+.menu_txt2{
+  color: #6A6A6A;
+  float: left;
+  margin-left: 21px;
+  font-size: 11px;
+  margin-bottom: 8px;
+}
+
+.divider_css {
+  width: 92%;
+  margin-left: 16px;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.min_height {
+  min-height: 1px;
+}
+
+ion-col{
+  text-align: center;
+  text-align: -webkit-center;
+}
+ion-col .action_container{
+    /* margin: 6px; */
+    border: 1px solid #F6E25D;
+    border-radius: 8px;
+    font-size: 12px;
+    background-color: #F8F8F8;
+    text-align: center;
+    height: 120px;
+    width: 160px;
+    padding-top: 10px;
+      /* width: 215px;       margin-left: 11px;*/
+}
+
+ion-col .action_txt{
+  font-weight: bold;
+  color: #252B3B;
+}
+
+ion-col .prefix_hashtag{
+  margin-top: 1px;
+  color: #6a6a6a;
+}
+
+ion-col .prefix_hashtag .hashtag {
+  margin-top: 5px;
+  color: #EB8242 !important;
+}
+
+.action_icon {
+  height: 48px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.social_i_size {
+  width: 12px;
+  height: 12px;
+}
+
+ion-col{
+  width: 0 !important;
+}
+
+ion-item-divider {
+  border-color: #EDEDED;
+}
+
+ion-row{
+  padding: 6px;
+  margin-left: 4px;
+  margin-top: -4px;
+}
+
+ion-toolbar {
+  --background: transparent;
+  --ion-color-base: transparent !important;
+}
+
+.web_center{
+  text-align: -webkit-center;
 }

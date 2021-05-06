@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "shadowsLight";
+    src: url("./ShadowsIntoLight.ttf") format("opentype");
+  }
+
+@font-face {
+    font-family: "NunitoSans";
+    src: url("./NunitoSans-Regular.ttf") format("opentype");
+}
+  

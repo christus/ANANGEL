@@ -1,14 +1,138 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-thumbnail>
-      <ion-img src="assets/logo.png"></ion-img>
-    </ion-thumbnail>
-    <p>Change Mauritius,One action at a time</p>
-  </ion-toolbar>
+  <div class="bg_img"></div>
+  <div class="web_center">
+    <div class="logo"></div>
+    <div class="volunteer_banner">
+      <div class="do_good"> DO GOOD,</div>
+      <div class="one_action"> one action at a time!</div> 
+    </div>
+  </div>
+  <a href="https://api.whatsapp.com/send?phone=23052508038"><span class="message_icon"></span></a>
+  <div class="menu_txt1">Make a difference today.</div>
+  <div class="menu_txt2">anAngel amplifying postive impact.</div>
+  <ion-item-divider class="divider_css min_height"></ion-item-divider>
 </ion-header>
 
+
+
 <ion-content>
-  <div id="container">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="action_container">
+          <a href="https://anangel.mu/register">
+            <div text-center>
+              <ion-img  class="action_icon" src="../../../assets/sign_in_up.png"></ion-img>  
+            </div>
+            <div class="action_txt">
+              Sign-up | Sign-in
+            </div>
+            <div class="prefix_hashtag">
+              to #be
+              <span class="hashtag">
+                anAngel
+              </span>
+            </div>
+          </a>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="action_container">
+          <a href="https://anangel.mu/dashboard/campaigns">
+            <div text-center>
+              <ion-img  class="action_icon" src="../../../assets/volunteer.png"></ion-img>  
+            </div>
+            <div class="action_txt">
+              Volunteer
+            </div>
+            <div class="prefix_hashtag">
+              Join a 
+              <span class="hashtag">
+                 campaign
+              </span>
+            </div>
+          </a>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div class="action_container">
+          <a href="https://anangel.mu/dashboard/campaigns/create">
+            <div text-center>
+              <ion-img  class="action_icon" src="../../../assets/campaign.png"></ion-img>  
+            </div>
+            <div class="action_txt">
+              Start a campaign
+            </div>
+            <div class="prefix_hashtag">
+              Get the
+              <span class="hashtag">
+                community's help
+              </span>
+            </div>
+          </a>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="action_container">
+          <a href="https://anangel.mu/dashboard/donate">
+            <div text-center>
+              <ion-img  class="action_icon" src="../../../assets/donate.png"></ion-img>  
+            </div>
+            <div class="action_txt">
+              Donate
+            </div>
+            <div class="prefix_hashtag">
+              to support a
+              <span class="hashtag">
+                good cause
+              </span>
+            </div>
+          </a>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div class="action_container">
+          <a href="https://anangel.mu/dashboard/tasks">
+            <div text-center>
+              <ion-img  class="action_icon" src="../../../assets/validate.png"></ion-img>  
+            </div>
+            <div class="action_txt">
+              Validate your deed
+            </div>
+            <div class="prefix_hashtag">
+              and collect your
+              <span class="hashtag">
+                reward
+              </span>
+            </div>
+          </a>
+        </div>
+      </ion-col>
+      <ion-col >
+        <div class="action_container">
+          <a href="https://anangel.mu/dashboard/redeem">
+            <div text-center>
+              <ion-img  class="action_icon" src="../../../assets/redeem.png"></ion-img>  
+            </div>
+            <div class="action_txt">
+              Redeem
+            </div>
+            <div class="prefix_hashtag">
+              your points and
+              <span class="hashtag">
+                shop
+              </span>
+            </div>
+          </a>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>  
+  <!-- <div id="container">
     <ion-button expand="block" class="register_btn" href="https://anangel.mu/register"><img src="/assets/icon/register.png">Register</ion-button>
     <ion-button expand="block" class="login_btn" href="https://anangel.mu/login"><img src="/assets/icon/login.png">Login</ion-button>
     <ion-button expand="block" class="volunteer_btn" href="https://anangel.mu/dashboard/campaigns"><img src="/assets/icon/volunteer.png">Volunteer</ion-button>
@@ -17,20 +141,25 @@
     <ion-button expand="block" class="campaign_btn" href="https://anangel.mu/dashboard/campaigns/create"><img src="/assets/icon/campaign.png">Start a campaign</ion-button>
     <ion-button expand="block" class="validate_btn" href="https://anangel.mu/dashboard/tasks"><img src="/assets/icon/validate.png">Validate task</ion-button>
     <ion-button expand="block" class="chat_btn" href="https://api.whatsapp.com/send?phone=23052508038"><img src="/assets/icon/chat.png">Chat</ion-button>
-  </div>
+  </div> -->
 </ion-content>
 
+
 <ion-footer class="ion-no-border">
-  <ion-toolbar>
+  <ion-item-divider class="min_height"></ion-item-divider>
+  <ion-toolbar transparent>
     <ul>
       <li>
-        <a href="https://www.linkedin.com/company/anangel/"><img src="assets/icon/linkedin.png"></a>
+        <a href="https://www.facebook.com/anAngel2020/"><img class="social_i_size" src="assets/icon/facebook.png"></a>
       </li>
       <li>
-        <a href="https://www.facebook.com/anAngel2020/"><img src="assets/icon/facebook.png"></a>
+        <a href="https://www.linkedin.com/company/anangel/"><img class="social_i_size" src="assets/icon/linkedin.png"></a>
       </li>
       <li>
-        <a href="https://www.instagram.com/an_angel_community/"><img src="assets/icon/insta.png"></a>
+        <a href="https://www.instagram.com/an_angel_community/"><img class="social_i_size" src="assets/icon/Insta.png"></a>
+      </li>
+      <li>
+        <a href="https://tiktok.com/@anangel19/"><img class="social_i_size" src="assets/icon/tiktok.png"></a>
       </li>
     </ul>
   </ion-toolbar>
