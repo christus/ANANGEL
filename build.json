@@ -1,0 +1,10 @@
+{
+    "android": {
+        "release": {
+            "keystore": "build-config/android/anAngel.keystore",
+            "storePassword": "anangel",
+            "alias": "anangel",
+            "password" : "anangel"
+        }
+    }
+}
