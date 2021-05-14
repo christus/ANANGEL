@@ -10,9 +10,10 @@ import { OneSignal } from '@ionic-native/onesignal/ngx'
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
+import { NotificationsComponent } from './notifications/notifications.component';  
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, NotificationsComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
